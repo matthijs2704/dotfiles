@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Mac OS X configuration
+# macOS configuration
 #
-# This configuration applies to the latest version of macOS (currently 11.3),
+# This configuration applies to the latest version of macOS (currently 11.4),
 # and sets up preferences and configurations for all the built-in services and
 # apps. Third-party app config should be done elsewhere.
 #
@@ -20,7 +20,7 @@
 # @see: http://secrets.blacktree.com/?showapp=com.apple.finder
 # @see: https://github.com/herrbischoff/awesome-macos-command-line
 #
-# @author Jeff Geerling
+# @author Matthijs Logemann
 
 # Warn that some commands will not be run if the script is not run as root.
 if [[ $EUID -ne 0 ]]; then
