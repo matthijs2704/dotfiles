@@ -124,3 +124,6 @@ knownrm() {
  else
    sed -i '' "$1d" ~/.ssh/known_hosts
  fi
+}
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
