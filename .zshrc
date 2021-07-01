@@ -59,7 +59,7 @@ ZSH_DISABLE_COMPFIX=true
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Enable plugins
-plugins=(git ssh-agent docker docker-compose brew history history-substring-search xcode)
+plugins=(git docker docker-compose brew history history-substring-search xcode)
 
 #zstyle :omz:plugins:ssh-agent identities id_rsa id_logicbit id_logicbit_root id_rpi id_xs4all
 
