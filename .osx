@@ -299,6 +299,16 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 ###############################################################################
+# Enable automatic updates                                                    #
+###############################################################################
+defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticallyInstallMacOSUpdates -bool true
+defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticCheckEnabled -bool true
+defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticDownload -bool true
+defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist CriticalUpdateInstall -bool true
+defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ConfigDataInstall -bool true
+defaults write /Library/Preferences/com.apple.commerce.plist AutoUpdate -bool true
+
+###############################################################################
 # Kill/restart affected applications                                          #
 ###############################################################################
 
