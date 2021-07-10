@@ -8,8 +8,13 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Lots of additional paths, might need to clean this up sometime
-export PATH="/usr/local/share/zsh/site-functions:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/matthijs/.local/bin"
-export PATH="$PATH:$HOME/.composer/vendor/bin:/Users/matthijs/Library/Python/3/bin:/Users/matthijs/Development/flutter/bin:/usr/local/MacGPG2/bin/"
+# Add python and homebrew items to path, as the first
+export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
+
+# Add other bin dirs
+export PATH="$PATH:/usr/local/share/zsh/site-functions:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/matthijs/.local/bin"
+
+export PATH="$PATH:$HOME/.composer/vendor/bin:/usr/local/MacGPG2/bin/"
 
 # Set the zsh theme to agnoster
 ZSH_THEME="agnoster"
@@ -65,10 +70,7 @@ plugins=(git docker docker-compose brew history history-substring-search xcode)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/matthijs/.local/bin:$HOME/.composer/vendor/bin:/Users/matthijs/Library/Python/3/bin:/Users/matthijs/Development/flutter/bin:/usr/local/MacGPG2/bin/"
 
-# Add python and homebrew items to path
-export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
