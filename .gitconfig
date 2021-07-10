@@ -1,10 +1,7 @@
 [user]
   name = Matthijs Logemann
   email = matthijs@logemann.dev
-[user]
-	name = Matthijs Logemann
-	email = matthijs@logemann.dev
-	signingkey = CBB41E07
+  signingkey = CBB41E07
 [core]
   editor = vi
   excludesfile = ~/.gitignore
@@ -38,3 +35,11 @@
 	program = gpg2
 [tag]
 	forceSignAnnotated = true
+[commit]
+	gpgsign = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
