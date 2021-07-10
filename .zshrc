@@ -67,6 +67,9 @@ plugins=(git docker docker-compose brew history history-substring-search xcode)
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/matthijs/.local/bin:$HOME/.composer/vendor/bin:/Users/matthijs/Library/Python/3/bin:/Users/matthijs/Development/flutter/bin:/usr/local/MacGPG2/bin/"
 
+# Add python and homebrew items to path
+export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
