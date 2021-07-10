@@ -89,9 +89,12 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-# Magic Mouse: Enable 
+# Magic Mouse: Enable Right click
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
 defaults write com.apple.AppleMultitouchMouse MouseButtonMode TwoButton
+
+# Magic Mouse: Set scaling
+defaults write .GlobalPreferences com.apple.mouse.scaling 1.5
 
 ###############################################################################
 # Screen                                                                      #
