@@ -70,6 +70,9 @@ osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/S
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
+# Trackpad: Tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+
 # Trackpad: map bottom right corner to right-click (requires restart!)
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
@@ -85,6 +88,10 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Magic Mouse: Enable 
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode TwoButton
 
 ###############################################################################
 # Screen                                                                      #
