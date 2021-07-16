@@ -305,13 +305,6 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
-# Music                                                                       #
-###############################################################################
-
-# Stop iTunes from responding to the keyboard media keys.
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
-###############################################################################
 # Enable automatic updates                                                    #
 ###############################################################################
 defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticallyInstallMacOSUpdates -bool true
