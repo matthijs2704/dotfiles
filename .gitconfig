@@ -1,10 +1,10 @@
 [user]
-  name = Matthijs Logemann
-  email = matthijs@logemann.dev
+	name = Matthijs Logemann
+	email = matthijs@logemann.dev
   signingkey = CBB41E07
 [core]
   editor = vi
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/matthijs/.gitignore
   autocrlf = input
 [color]
   branch = auto
@@ -37,6 +37,7 @@
 	forceSignAnnotated = true
 [commit]
 	gpgsign = true
+	template = /Users/matthijs/.stCommitMsg
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

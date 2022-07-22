@@ -154,6 +154,9 @@ defaults write NSGlobalDomain com.apple.springing.enabled -bool true
 # Remove the spring loading delay for directories
 defaults write NSGlobalDomain com.apple.springing.delay -float 0.1
 
+# Disable window background tinting
+defaults write NSGlobalDomain AppleReduceDesktopTinting -int 1
+
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
@@ -187,8 +190,11 @@ defaults write com.apple.dock expose-animation-duration -float 0.15
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-# Enable the 'reduce transparency' option. Save GPU cycles.
-defaults write com.apple.universalaccess reduceTransparency -bool false
+# Enable dock auto-hiding
+defaults write com.apple.dock autohide -int 1
+
+# # Enable the 'reduce transparency' option. Save GPU cycles.
+# defaults write com.apple.universalaccess reduceTransparency -bool false
 
 # Hot corners
 # Possible values:

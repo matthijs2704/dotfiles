@@ -15,6 +15,7 @@ export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 export PATH="$PATH:/usr/local/share/zsh/site-functions:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/matthijs/.local/bin"
 
 export PATH="$PATH:$HOME/.composer/vendor/bin:/usr/local/MacGPG2/bin/"
+export PATH="$HOME/.jenv/bin:$PATH"
 
 # Set the zsh theme to agnoster
 ZSH_THEME="agnoster"
@@ -69,7 +70,7 @@ plugins=(git docker docker-compose brew history history-substring-search xcode)
 #zstyle :omz:plugins:ssh-agent identities id_rsa id_logicbit id_logicbit_root id_rpi id_xs4all
 
 # User configuration
-
+DISABLE_UPDATE_PROMPT=true
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -132,3 +133,13 @@ knownrm() {
 }
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Laravel Sail
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+function gam() { "/Users/matthijs/bin/gam/gam" "$@" ; }
+
+# Java version manager
+eval "$(jenv init -)"
