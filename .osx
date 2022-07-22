@@ -53,6 +53,9 @@ if [[ "$RUN_AS_ROOT" = true ]]; then
   systemsetup -setrestartfreeze on
 fi
 
+# Disable auto capitalization
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
@@ -191,7 +194,7 @@ defaults write com.apple.dock expose-animation-duration -float 0.15
 defaults write com.apple.dock showhidden -bool true
 
 # Enable dock auto-hiding
-defaults write com.apple.dock autohide -int 1
+defaults write com.apple.dock autohide -bool true
 
 # # Enable the 'reduce transparency' option. Save GPU cycles.
 # defaults write com.apple.universalaccess reduceTransparency -bool false
