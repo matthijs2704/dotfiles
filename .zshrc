@@ -9,7 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Lots of additional paths, might need to clean this up sometime
 # Add python and homebrew items to path, as the first
-export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
+export PATH="$HOME/Library/Python/3.8/bin:/usr/local/bin/:/opt/homebrew/bin:$PATH"
 
 # Add other bin dirs
 export PATH="$PATH:/usr/local/share/zsh/site-functions:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/matthijs/.local/bin"
